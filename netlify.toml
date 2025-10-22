@@ -1,0 +1,12 @@
+[build]
+  functions = "netlify/functions"
+
+# Optional: if you want pretty URLs without the /.netlify/functions prefix,
+# uncomment the redirects below to route /v1/* to the function.
+# Note: if you enable this, update your app to handle the base path or keep
+# routes as-is and include '/v1' in the function path.
+
+#[[redirects]]
+#  from = "/v1/*"
+#  to = "/.netlify/functions/api/v1/:splat"
+#  status = 200
