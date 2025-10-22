@@ -137,6 +137,16 @@
   resolved "https://registry.yarnpkg.com/@hono/node-server/-/node-server-1.19.5.tgz#6e9a991e2a5843b33aee8b93a11ff68b5fdc7712"
   integrity sha512-iBuhh+uaaggeAuf+TftcjZyWh2GEgZcVGXkNtskLVoWaXhnJtC5HLHrU8W1KHDoucqO1MswwglmkWLFyiDn4WQ==
 
+"@hono/swagger-ui@^0.4.0":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@hono/swagger-ui/-/swagger-ui-0.4.1.tgz#d67a31420c0f9c77946c820d1ab3a350998d0a9a"
+  integrity sha512-kPaJatHffeYQ3yVkHo878hCqwfapqx54FczJVJ+eRWt8J4biyVVMIdCAJb6MyA8bcnHUoTmUpPc7OJAV1VTg2g==
+
+"@scarf/scarf@=1.4.0":
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/@scarf/scarf/-/scarf-1.4.0.tgz#3bbb984085dbd6d982494538b523be1ce6562972"
+  integrity sha512-xxeapPiUXdZAE3che6f3xogoJPeZgig6omHEy1rIY5WVsB3H2BHNnZH+gHG6x91SCWyQCzWGsuL2Hh3ClO5/qQ==
+
 "@types/node@^22.8.6":
   version "22.18.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-22.18.12.tgz#e165d87bc25d7bf6d3657035c914db7485de84fb"
@@ -197,6 +207,13 @@ resolve-pkg-maps@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/resolve-pkg-maps/-/resolve-pkg-maps-1.0.0.tgz#616b3dc2c57056b5588c31cdf4b3d64db133720f"
   integrity sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==
+
+swagger-ui-dist@^5.17.14:
+  version "5.29.5"
+  resolved "https://registry.yarnpkg.com/swagger-ui-dist/-/swagger-ui-dist-5.29.5.tgz#8271639ef9ae2af5fc8fda0ecfc84573c3f671f7"
+  integrity sha512-2zFnjONgLXlz8gLToRKvXHKJdqXF6UGgCmv65i8T6i/UrjDNyV1fIQ7FauZA40SaivlGKEvW2tw9XDyDhfcXqQ==
+  dependencies:
+    "@scarf/scarf" "=1.4.0"
 
 tsx@^4.16.0:
   version "4.20.6"

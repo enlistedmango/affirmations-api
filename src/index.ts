@@ -2,6 +2,8 @@ import { Hono } from 'hono';
 import { cors } from 'hono/cors';
 import { AFFIRMATIONS, Affirmation } from './data.js';
 import { prettyJSON } from 'hono/pretty-json';
+import { swaggerUI } from '@hono/swagger-ui';
+import { openApiV1 } from './openapi.js';
 
 const app = new Hono();
 
@@ -41,6 +43,13 @@ app.get('/', (c) => {
         endpoints: ['/v1/affirmation', '/v1/affirmations', '/v1/affirmations/:id']
     });
 });
+
+// OpenAPI JSON + Swagger UI
+app.get('/v1/openapi.json', (c) => {
+    c.header('Cache-Control', 'no-store');
+    return c.json(openApiV1);
+});
+app.get('/docs', swaggerUI({ url: '/v1/openapi.json' }));
 
 app.get('/v1/affirmations', (c) => {
     const limit = Math.min(Math.max(parseInt(c.req.query('limit') ?? '1', 10) || 1, 0), 100);

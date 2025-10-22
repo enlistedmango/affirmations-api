@@ -14,6 +14,8 @@ Base URL (local dev): `http://localhost:8787`
   - Returns a random list (default `limit=1`).
   - Query params: `limit` (1–100), `tag`, `lang`
 - GET `/v1/affirmations/:id` — Returns an affirmation by id, or 404.
+- GET `/v1/openapi.json` — OpenAPI spec (v1)
+- GET `/docs` — Interactive Swagger UI
 
 ### Affirmation shape
 
