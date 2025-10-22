@@ -1,5 +1,5 @@
 import { handle } from 'hono/aws-lambda'
-import app from '../../src/index.js'
+import app from '../../src/index'
 
 // Netlify Functions (AWS Lambda under the hood)
 // Exposes your Hono app at:

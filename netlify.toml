@@ -1,12 +1,9 @@
 [build]
   functions = "netlify/functions"
 
-# Optional: if you want pretty URLs without the /.netlify/functions prefix,
-# uncomment the redirects below to route /v1/* to the function.
-# Note: if you enable this, update your app to handle the base path or keep
-# routes as-is and include '/v1' in the function path.
-
-#[[redirects]]
-#  from = "/v1/*"
-#  to = "/.netlify/functions/api/v1/:splat"
-#  status = 200
+# Route ALL paths to the function so the root domain works too.
+# This forwards the original path to the Hono app unchanged.
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/api/:splat"
+  status = 200
