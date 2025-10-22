@@ -1,6 +1,12 @@
 [build]
   functions = "netlify/functions"
 
+# Send the site root to the primary endpoint
+[[redirects]]
+  from = "/"
+  to = "/v1/affirmation"
+  status = 301
+
 # Route ALL paths to the function so the root domain works too.
 # This forwards the original path to the Hono app unchanged.
 [[redirects]]
